@@ -38,7 +38,7 @@ class Location(db.Model):
     id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     name = db.Column(db.String(50), nullable=False)
     loc_type = db.Column(db.String(50), nullable=False)
-    is_open = Column(db.Boolean, unique=False, default=True)
+    is_open = db.Column(db.Boolean, unique=False, default=True)
     latitude = db.Column(db.Integer)
     longitude = db.Column(db.Integer)
 
