@@ -12,7 +12,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "start-flask-api": "cd api && env/bin/flask run --host=0.0.0.0",
+    "start-flask-api": "cd api && flask run --host=0.0.0.0 --no-debugger",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -32,5 +32,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://0.0.0.0:5000/"
+  "proxy": "http://localhost:5000"
 }
