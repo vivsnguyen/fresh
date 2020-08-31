@@ -5,6 +5,9 @@ app = Flask(__name__)
 
 # Required to use Flask sessions and the debug toolbar
 app.secret_key = "ABC"
+@app.route("/", methods=["GET"])
+def index():
+    return {'homepage'}
 
 @app.route("/time", methods=["GET"])
 def get_current_time():
