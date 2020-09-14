@@ -7,7 +7,7 @@ app = Flask(__name__)
 app.secret_key = "ABC"
 @app.route("/", methods=["GET"])
 def index():
-    return {'homepage'}
+    return 'homepage'
 
 @app.route("/time", methods=["GET"])
 def get_current_time():
