@@ -23,5 +23,5 @@
 // }
 
 // export default GoogleApiWrapper({
-//   apiKey: 'AIzaSyBTFofRDVmd8HaJzyplpaWhp4_n2RtwSMk'
+//   apiKey: ''
 // })(MapContainer);
